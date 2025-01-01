@@ -1,24 +1,18 @@
 package Bronze_V;
 
+import java.math.BigInteger;
 import java.util.*;
 
-// 1330번. 두 수 비교하기
+// 2338번. 긴자리 계산
 public class Main {
 	public static void main(String[] args) {
-		double a, b;
 		Scanner sc = new Scanner(System.in);
 		
-		a = sc.nextDouble();
-		b = sc.nextDouble();
+		BigInteger a = sc.nextBigInteger();
+		BigInteger b = sc.nextBigInteger();
 		
-		if (a > b) {
-			System.out.println(">");
-		}
-		else if (a == b) {
-			System.out.println("==");
-		}
-		else {
-			System.out.println("<");
-		}
+		System.out.println(a.add(b));
+		System.out.println(a.subtract(b));
+		System.out.println(a.multiply(b));
 	}
 }
