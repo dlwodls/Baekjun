@@ -3,16 +3,16 @@ package Bronze_V;
 import java.math.BigInteger;
 import java.util.*;
 
-// 2338번. 긴자리 계산
+// 2420번. 사파리월드
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		BigInteger a = sc.nextBigInteger();
-		BigInteger b = sc.nextBigInteger();
+		BigInteger n = sc.nextBigInteger();
+		BigInteger m = sc.nextBigInteger();
 		
-		System.out.println(a.add(b));
-		System.out.println(a.subtract(b));
-		System.out.println(a.multiply(b));
+		BigInteger result = n.subtract(m);
+		
+		System.out.println(result.abs());
 	}
 }
